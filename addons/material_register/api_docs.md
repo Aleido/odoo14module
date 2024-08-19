@@ -7,30 +7,35 @@
 **Response** (list format):
 
 ```json
-[
-    {
-        "id": 47,
-        "code": "JNS001",
-        "name": "Raw Denim",
-        "type": "jeans",
-        "buy_price": 150.0,
-        "produsen_id": [
-            11,
-            "Denim World Ltd."
-        ]
-    },
-    {
-        "id": 49,
-        "code": "CTN001",
-        "name": "Organic Cotton",
-        "type": "cotton",
-        "buy_price": 130.0,
-        "produsen_id": [
-            10,
-            "TexFab Inc."
-        ]
-    }
-]
+{
+    "code": 200,
+    "message": Success,
+    "data": [
+        {
+            "id": 1,
+            "code": "JK099",
+            "name": "Kain Blaco Jamaika",
+            "type": "jeans",
+            "buy_price": 150.0,
+            "produsen_id": [
+                1,
+                "Jadi Makmur"
+            ]
+        },
+        {
+            "id": 3,
+            "code": "C001",
+            "name": "Kapas",
+            "type": "cotton",
+            "buy_price": 130.0,
+            "produsen_id": [
+                1,
+                "Jadi Makmur"
+            ]
+        },
+...
+    ]
+}
 ```
 
 ## Create Material
@@ -57,10 +62,7 @@
 {
     "jsonrpc": "2.0",
     "id": null,
-    "result": {
-        "code": 200,
-        "message": "Material created successfully with ID: 66!"
-    }
+    "result": "<Response 78 bytes [200 OK]>"
 }
 ```
 
@@ -90,10 +92,7 @@
 {
     "jsonrpc": "2.0",
     "id": null,
-    "result": {
-        "code": 200,
-        "message": "Material updated successfully!"
-    }
+    "result": "<Response 65 bytes [200 OK]>"
 }
 ```
 
@@ -107,6 +106,35 @@
 ```json
 {
     "code": 200,
-    "message": "Material deleted successfully!"
+    "message": Hapus Material berhasil!,
+    "data": None
+}
+```
+
+
+## Get All Produsen
+
+**URL:**
+
+`GET /api/produsen`
+
+**Response** (list format):
+
+```json
+{
+    "code": 200,
+    "message": Success,
+    "data": [
+        {
+            "id": 1,
+            "name": "Jadi Makmur",
+            "contact": "0274 3800xx"
+        },
+        {
+            "id": 2,
+            "name": "Cotton Collect",
+            "contact": "0274 230xxx"
+        }
+    ]
 }
 ```
