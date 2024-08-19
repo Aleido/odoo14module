@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "09a43b96-c634-4c9b-9a3c-309d76b195e5",
+		"name": "Test API Material Register modul odoo",
+		"description": "Ini adalah collection API untuk test module material register dari Odoo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28949716"
+	},
+	"item": [
+		{
+			"name": "Get Materials",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8069/api/materials"
+			},
+			"response": []
+		},
+		{
+			"name": "Post Material",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"params\": {\n        \"code\": \"JK099\",\n        \"name\": \"Kain Blaco\",\n        \"type\": \"jeans\",\n        \"buy_price\": \"135\",\n        \"produsen_id\": \"1\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8069/api/materials"
+			},
+			"response": []
+		},
+		{
+			"name": "Put Materials",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"params\": {\n        \"code\": \"JK099\",\n        \"name\": \"Kain Blaco Jamaika\",\n        \"type\": \"jeans\",\n        \"buy_price\": \"150\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8069/api/materials/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Materials based on material_id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8069/api/materials/5"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Produsen",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

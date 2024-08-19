@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>  
+
+    <menuitem name="Material Register" id="material_register_menu_root" sequence="10"/>
+
+    <menuitem name="Materials" id="menu_material_register" sequence="10" action="action_material_register" parent="material_register_menu_root"/>
+
+    <menuitem name="Produsen" id="menu_produsen_register"  sequence="20" action="action_produsen_register" parent="material_register_menu_root"/>
+
+</odoo>

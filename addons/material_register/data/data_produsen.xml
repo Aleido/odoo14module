@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Produsen Data -->
+        <record id="produsen_1" model="produsen.register">
+            <field name="name">Jadi Makmur</field>
+            <field name="contact">0274 3800xx</field>
+            <field name="address">Jalan Sukonandi Raya, Jogjakarta</field>
+        </record>
+        <record id="produsen_2" model="produsen.register">
+            <field name="name">Cotton Collect</field>
+            <field name="contact">0274 230xxx</field>
+            <field name="address">Jalan Ngeksigondo 34, Yogyakarta</field>
+        </record>
+        
+    </data>
+</odoo>
